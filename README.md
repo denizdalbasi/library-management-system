@@ -42,8 +42,9 @@ library-management/
 │       └── Main.java                 # Manual test runner with visual outputs
 └── src/test/java/com/library/
     └── LibraryTest.java              # Automated JUnit test suite
-
-
+```
+---
+## Files with Detailed Explanations
 ### 1. Main Classes (`com.library.model`)
 * **`Book.java`**: Stores information about a book (ISBN, title, author, release year). It is immutable (cannot be changed after creation) and uses the ISBN for comparison.
 * **`User.java`**: Stores user information (User ID, name, email). Uses the User ID for identification.
@@ -79,13 +80,3 @@ library-management/
 * **`Main.java`**: A console application that runs scenario tests and prints detailed step-by-step logs.
 * **`LibraryTest.java`**: Unit tests written in JUnit to automatically verify system rules.
 
----
-
-## ⚙️ How the System Works (Workflow)
-
-```text
-[User Request] ──> [Library Service] ──> Checks Repositories & Loan List
-                         │
-                         ├── Validates input rules (repOk)
-                         ├── Prevents duplicate loans
-                         └── Returns safe copies of data
