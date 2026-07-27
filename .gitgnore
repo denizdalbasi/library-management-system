@@ -1,9 +1,0 @@
-# Ignore compiled Java class files
-*.class
-
-# Ignore IDE & system files
-.project
-.classpath
-.settings/
-target/
-.DS_Store
